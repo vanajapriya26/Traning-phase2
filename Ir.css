@@ -1,0 +1,90 @@
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ir-2.jpg'); /* Replace 'path/to/your/background-image.jpg' with the path to your image */
+    background-size: 1600px 1400px ; /* Ensures the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 5px;
+    font-family: 'Verdana', sans-serif;
+    color: #555;
+  }
+  
+  .section {
+    margin-top: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section:hover {
+    transform: scale(1.05);
+    background-color: #62ec79;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about { background-color: #e2e61b; }
+  .experience { background-color: #0fe3cb; }
+  .education { background-color: #2196f3; }
+  .skills { background-color: #ff8a65; }
+  .projects { background-color: #9c65cc; }
+  .contact { background-color: #dc4577; }
+  
+  .about.active { background-color: #ff9800; }
+  .experience.active { background-color: #ff9800; }
+  .education.active { background-color: #ff9800; }
+  .skills.active { background-color: #ff9800; }
+  .projects.active { background-color: #ff9800; }
+  .contact.active { background-color: #ff9800; }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  .dark-mode .section:hover {
+    background-color: #444;
+  }
+  .contact a {
+    color:white; 
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
